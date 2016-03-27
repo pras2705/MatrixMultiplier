@@ -15,9 +15,8 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="34dp"
         android:layout_toLeftOf="@+id/textView1"
-        android:ems="10"
-        android:background="@drawable/shape" >
-
+        android:background="@drawable/shape"
+        android:ems="10" >
     </EditText>
 
     <EditText
@@ -27,8 +26,8 @@
         android:layout_alignBottom="@+id/solEditText1"
         android:layout_alignRight="@+id/textView1"
         android:layout_toRightOf="@+id/solEditText1"
-        android:ems="10" 
-        android:background="@drawable/shape"/>
+        android:background="@drawable/shape"
+        android:ems="10" />
 
     <EditText
         android:id="@+id/solEditText3"
@@ -36,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/solEditText2"
         android:layout_toRightOf="@+id/solEditText2"
-        android:ems="10" 
-        android:background="@drawable/shape"/>
+        android:background="@drawable/shape"
+        android:ems="10" />
 
     <EditText
         android:id="@+id/solEditText6"
@@ -45,8 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/solEditText5"
         android:layout_alignLeft="@+id/solEditText3"
-        android:ems="10" 
-        android:background="@drawable/shape"/>
+        android:background="@drawable/shape"
+        android:ems="10" />
 
     <EditText
         android:id="@+id/solEditText9"
@@ -55,19 +54,8 @@
         android:layout_alignBaseline="@+id/solEditText8"
         android:layout_alignBottom="@+id/solEditText8"
         android:layout_toRightOf="@+id/solEditText8"
-        android:ems="10" 
-        android:background="@drawable/shape"/>
-
-<!--     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/solEditText7"
-        android:layout_alignRight="@+id/solEditText9"
-        android:layout_below="@+id/button1"
-        android:orientation="horizontal" >
-
-    </LinearLayout> -->
+        android:background="@drawable/shape"
+        android:ems="10" />
 
     <EditText
         android:id="@+id/solEditText8"
@@ -96,8 +84,8 @@
         android:layout_below="@+id/solEditText8"
         android:layout_marginTop="34dp"
         android:layout_toRightOf="@+id/solEditText7"
-        android:text="INPUT AGAIN" 
-        android:onClick="goToMainActivity"/>
+        android:onClick="goToMainActivity"
+        android:text="INPUT AGAIN" />
 
     <TextView
         android:id="@+id/textView1"
@@ -128,13 +116,13 @@
         android:layout_toLeftOf="@+id/solEditText6"
         android:background="@drawable/shape"
         android:ems="10" />
-    
-    
-        <RelativeLayout
+
+    <RelativeLayout
         android:id="@+id/sol_ad_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_alignParentBottom="true"></RelativeLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button1" >
+    </RelativeLayout>
 
 </RelativeLayout>
