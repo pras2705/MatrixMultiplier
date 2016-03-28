@@ -38,7 +38,6 @@ public class SolutionActivity extends Activity {
 		arr3 = getIntent().getIntArrayExtra("3rdRow");
 		initializeElements();
 		setArrayElements();
-		InMobiSdk.init(this, ACCOUNT_ID);
 		InMobiBanner imbanner = new InMobiBanner(this, BANNER_PLACEMENT_ID);
 
 		RelativeLayout adContainer = (RelativeLayout) findViewById(R.id.sol_ad_container);
@@ -169,7 +168,12 @@ public class SolutionActivity extends Activity {
 		interstitial.load();
 		startActivity(i);
 	}
-
+        @Override
+	public void onBackPressed() {
+		interstitial.load();
+		super.onBackPressed();
+	}
+        
 	private int toPixelUnits(int dipUnit) {
 		float density = getResources().getDisplayMetrics().density;
 		return Math.round(dipUnit * density);
